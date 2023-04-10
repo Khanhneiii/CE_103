@@ -20,17 +20,11 @@ Discarded input sections
  .bss           0x00000000        0x0 main.o
  .text.CountDown_LedMatrix
                 0x00000000        0x6 main.o
- .data.YellowTime2_Config
+ .data.YellowTime_Config
                 0x00000000        0x2 main.o
- .data.GreenTime2_Config
+ .data.GreenTime_Config
                 0x00000000        0x2 main.o
- .data.RedTime2_Config
-                0x00000000        0x2 main.o
- .data.YellowTime1_Config
-                0x00000000        0x2 main.o
- .data.GreenTime1_Config
-                0x00000000        0x2 main.o
- .data.RedTime1_Config
+ .data.RedTime_Config
                 0x00000000        0x2 main.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
@@ -484,10 +478,10 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x958
+.debug_info     0x00000000      0x922
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x52e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega16/avr5/crtatmega16.o
- .debug_info    0x0000052e      0x42a main.o
+ .debug_info    0x0000052e      0x3f4 main.o
 
 .debug_abbrev   0x00000000      0x68a
  *(.debug_abbrev)
@@ -503,11 +497,11 @@ END GROUP
  *(.debug_frame)
  .debug_frame   0x00000000       0xcc main.o
 
-.debug_str      0x00000000      0x47e
+.debug_str      0x00000000      0x446
  *(.debug_str)
  .debug_str     0x00000000      0x1af C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega16/avr5/crtatmega16.o
- .debug_str     0x000001af      0x2cf main.o
-                                0x30d (size before relaxing)
+ .debug_str     0x000001af      0x297 main.o
+                                0x2d5 (size before relaxing)
 
 .debug_loc      0x00000000      0x3af
  *(.debug_loc)

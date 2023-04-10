@@ -30,11 +30,10 @@
 #define GREEN_TIME2 TimeConfig_2[2]
 
 uint8_t MatrixLed[]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x98,0x00};// Dem tu 0 -> 9.
-	int RedTime1_Config = 10, GreenTime1_Config = 5, YellowTime1_Config = 5;
-	int RedTime2_Config = 10, GreenTime2_Config = 5, YellowTime2_Config = 5;
+int RedTime_Config = 10, GreenTime_Config = 5, YellowTime_Config = 5;
 	
-	int TimeConfig_1[3] = {5,5,10};
-	int TimeConfig_2[3] = {10,5,5};
+int TimeConfig_1[3] = {5,5,10};
+int TimeConfig_2[3] = {10,5,5};
 int LightTime1 = 0, LightTime2 = 0;
 
 int index1 = 0, index2 = 0;
@@ -110,10 +109,10 @@ int main(void)
 			Light2 = RED_LIGHT;
 		}
 		else if (index2 == 1) {
-			Light2 = YELLOW_LIGHT;
+			Light2 = GREEN_LIGHT;
 		}
 		else if (index2 == 2) {
-			Light2 = GREEN_LIGHT;
+			Light2 = YELLOW_LIGHT;
 		}
 		
 		HienThiMatranLed(LightTime1, LightTime2);
